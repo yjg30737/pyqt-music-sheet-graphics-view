@@ -14,7 +14,7 @@ PyQt5 >= 5.8
 Code Example
 ```python
 import sys
-from PyQt5.QtWidgets import QWidget, QApplication, QGridLayout, QGraphicsScene
+from PyQt5.QtWidgets import QWidget, QApplication, QGridLayout
 from pyqt_music_sheet_graphics_view.musicSheetGraphicsView import MusicSheetGraphicsView
 
 
