@@ -1,1 +1,1 @@
-from musicSheetGraphicsView import *
+from .musicSheetGraphicsView import *
