@@ -16,11 +16,11 @@ class MusicSheetGraphicsView(QGraphicsView):
         self.__color = Qt.black
         self.__scene = QGraphicsScene()
 
-    def setMusicSheet(self, bar_cnt=5, bar_height=40):
+    def setMusicSheet(self, bars_group_cnt: int = 5, bars_group_height: int = 40):
         y = 10
-        for i in range(bar_cnt):
+        for i in range(bars_group_cnt):
             self.setMusicBar(y)
-            y += (MusicSheetGraphicsView.MUSIC_BAR_COUNT * self.__style_dict['line_height'] + bar_height)
+            y += (MusicSheetGraphicsView.MUSIC_BAR_COUNT * self.__style_dict['line_height'] + bars_group_height)
 
     def setMusicBar(self, y):
         self.drawLine(MusicSheetGraphicsView.MUSIC_BAR_COUNT, y)
